@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="whip"
+version="${version}"
+displayName="Dark Whip"
+logoFile="logo.png"
+description='''A dark, segmented whip that charges up for devastating attacks.
+
+Combat:
+■ Hold Left Click to charge the whip (no movement penalty!)
+■ Release Left Click: Overhead strike — high single-target damage via ray trace
+■ Right Click: Side slash — lower damage in a 180-degree frontal arc
+
+Enchantments:
+■ Reach (I-III): Increases whip range by +1.5 blocks per level
+■ Grapple (I): Overhead strike on a block swings you toward it
+
+Crafting: 1 Stick + 2 Leather + 1 Black Dye'''
+authors="Cukkoo"
+
+[[dependencies.whip]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.whip]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1]"
+ordering="NONE"
+side="BOTH"

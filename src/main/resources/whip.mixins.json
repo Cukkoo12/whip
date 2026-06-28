@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.cukkoo.whip.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "HumanoidModelMixin",
+    "MinecraftMixin",
+    "LocalPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8.5"
+}
