@@ -2,6 +2,7 @@
   "required": true,
   "package": "com.cukkoo.whip.mixin",
   "compatibilityLevel": "JAVA_17",
+  "refmap": "whip.refmap.json",
   "client": [
     "HumanoidModelMixin",
     "MinecraftMixin",

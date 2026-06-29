@@ -2,6 +2,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 version = project.mod_version
@@ -42,12 +43,18 @@ minecraft {
     }
 }
 
+mixin {
+    add sourceSets.main, "whip.refmap.json"
+    config "whip.mixins.json"
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 processResources {
